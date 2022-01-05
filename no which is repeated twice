@@ -1,0 +1,14 @@
+#Enter a repeated no only twice
+li=[]
+x=int(input("Enter the elements you want to enter in the list "))
+for i in range(x):
+    y=int(input("Enter the element "))
+    li.append(y)
+    
+print(li)
+k=1
+for i in li:
+    for j in li[k:]:
+        if i==j:
+            print(i," is repeated twice")
+    k=k+1
