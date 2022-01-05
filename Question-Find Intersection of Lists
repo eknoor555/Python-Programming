@@ -1,0 +1,20 @@
+#Intersection of Lists
+a=[]
+x=int(input("Enter the elements you want to enter in the list "))
+for i in range(x):
+    y=int(input("Enter the element "))
+    a.append(y)
+print(a)    
+li=[]
+z=int(input("Enter the elements you want to enter in the list "))
+for i in range(z):
+    y=int(input("Enter the element "))
+    li.append(y)
+print(li)
+c=[]    
+for i in a:
+    for j in li:
+        if i==j:
+            c.append(i)
+print(c)
+            
